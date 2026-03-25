@@ -46,9 +46,9 @@ html { scroll-behavior: smooth; }
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
 <header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex items-center justify-between h-20">
-<a href="index.html" class="flex items-center gap-3 scroll-top">
-<img src="assets/sparkleworks-logo.png" alt="SparkleWorks Cleaning Services" class="h-11 sm:h-12 w-auto object-contain object-left"/>
+<div class="flex items-center justify-between min-h-[5rem] py-2">
+<a href="index.html" class="flex items-center gap-3 scroll-top shrink-0">
+<img src="assets/sparkleworks-logo.png" alt="SparkleWorks Cleaning Services" width="300" height="80" class="h-12 sm:h-14 md:h-[3.75rem] w-auto max-w-[min(100vw-8rem,280px)] sm:max-w-[320px] object-contain object-left"/>
 </a>
 <nav class="hidden md:flex items-center gap-8">
 <div class="dropdown relative">
@@ -56,13 +56,13 @@ html { scroll-behavior: smooth; }
 Services <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
 </button>
 <div class="dropdown-menu absolute top-full left-0 pt-2 py-2 w-56 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-slate-200 dark:border-slate-700 opacity-0 invisible transition-all duration-200 z-50 max-h-[70vh] overflow-y-auto">
-<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary rounded-t-lg" href="residential.html">Residential</a>
-<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="move-in-out.html">Move In / Move Out</a>
-<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="str-airbnb.html">STR / Airbnb</a>
-<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="deep-clean.html">Deep Clean</a>
-<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="recurring.html">Recurring</a>
-<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="post-construction.html">Post-Construction</a>
-<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary rounded-b-lg border-t border-slate-100 dark:border-slate-700" href="commercial.html">Commercial</a>
+<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary rounded-t-lg" href="services/residential.html">Residential</a>
+<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="services/move-in-out.html">Move In / Move Out</a>
+<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="services/str-airbnb.html">STR / Airbnb</a>
+<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="services/deep-clean.html">Deep Clean</a>
+<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="services/recurring.html">Recurring</a>
+<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="services/post-construction.html">Post-Construction</a>
+<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary rounded-b-lg border-t border-slate-100 dark:border-slate-700" href="services/commercial.html">Commercial</a>
 </div>
 </div>
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="#about">About</a>
@@ -87,13 +87,13 @@ Services <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 
 Services <svg class="w-5 h-5 flex-shrink-0 transition-transform mobile-chevron" fill="currentColor" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
 </button>
 <div id="mobile-services" class="hidden pl-4 pb-2 border-b border-slate-200 dark:border-slate-700">
-<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="residential.html">Residential</a>
-<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="move-in-out.html">Move In / Move Out</a>
-<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="str-airbnb.html">STR / Airbnb</a>
-<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="deep-clean.html">Deep Clean</a>
-<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="recurring.html">Recurring</a>
-<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="post-construction.html">Post-Construction</a>
-<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="commercial.html">Commercial</a>
+<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="services/residential.html">Residential</a>
+<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="services/move-in-out.html">Move In / Move Out</a>
+<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="services/str-airbnb.html">STR / Airbnb</a>
+<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="services/deep-clean.html">Deep Clean</a>
+<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="services/recurring.html">Recurring</a>
+<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="services/post-construction.html">Post-Construction</a>
+<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="services/commercial.html">Commercial</a>
 </div>
 </div>
 <a class="py-4 text-base font-semibold border-b border-slate-200 dark:border-slate-700 hover:text-primary transition-colors nav-link" href="#about">About</a>
@@ -210,7 +210,7 @@ Our services
 <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">Residential is our specialty—we also support local offices and workspaces. Explore a service to see how we can help.</p>
 </div>
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-<a href="residential.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
+<a href="services/residential.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
 <div class="h-16 w-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all">
 <span class="material-symbols-outlined text-3xl">home</span>
 </div>
@@ -218,7 +218,7 @@ Our services
 <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">Routine and detail-focused home care—living spaces that feel calm, fresh, and guest-ready.</p>
 <span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
 </a>
-<a href="move-in-out.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
+<a href="services/move-in-out.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
 <div class="h-16 w-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all">
 <span class="material-symbols-outlined text-3xl">moving</span>
 </div>
@@ -226,7 +226,7 @@ Our services
 <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">Start fresh or leave your place spotless for the next resident—ideal for leases and closings.</p>
 <span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
 </a>
-<a href="str-airbnb.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
+<a href="services/str-airbnb.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
 <div class="h-16 w-16 bg-accent/10 text-accent rounded-2xl flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-all">
 <span class="material-symbols-outlined text-3xl">holiday_village</span>
 </div>
@@ -234,7 +234,7 @@ Our services
 <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">Turnover cleans that protect your reviews—fast, thorough, and ready for the next guest.</p>
 <span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
 </a>
-<a href="deep-clean.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
+<a href="services/deep-clean.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
 <div class="h-16 w-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all">
 <span class="material-symbols-outlined text-3xl">cleaning_services</span>
 </div>
@@ -242,7 +242,7 @@ Our services
 <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">Top-to-bottom attention for kitchens, baths, and overlooked areas—beyond everyday upkeep.</p>
 <span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
 </a>
-<a href="recurring.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
+<a href="services/recurring.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
 <div class="h-16 w-16 bg-accent/10 text-accent rounded-2xl flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-all">
 <span class="material-symbols-outlined text-3xl">event_repeat</span>
 </div>
@@ -250,7 +250,7 @@ Our services
 <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">Weekly, bi-weekly, or monthly plans—predictable scheduling with the same familiar faces.</p>
 <span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
 </a>
-<a href="post-construction.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
+<a href="services/post-construction.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
 <div class="h-16 w-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all">
 <span class="material-symbols-outlined text-3xl">construction</span>
 </div>
@@ -260,7 +260,7 @@ Our services
 </a>
 </div>
 <div class="mt-10 text-center">
-<a href="commercial.html" class="inline-flex items-center gap-2 text-slate-600 dark:text-slate-400 hover:text-primary font-semibold text-sm">
+<a href="services/commercial.html" class="inline-flex items-center gap-2 text-slate-600 dark:text-slate-400 hover:text-primary font-semibold text-sm">
 <span class="material-symbols-outlined text-lg">corporate_fare</span>
 Commercial cleaning for Chicago offices &amp; small businesses — <span class="text-primary underline-offset-2 hover:underline">Learn more</span>
 </a>
@@ -356,7 +356,7 @@ Commercial cleaning for Chicago offices &amp; small businesses — <span class="
 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
 <div class="col-span-2">
 <a href="index.html" class="inline-block mb-6">
-<img src="assets/sparkleworks-logo.png" alt="SparkleWorks Cleaning Services" class="h-14 w-auto object-contain object-left brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"/>
+<img src="assets/sparkleworks-logo.png" alt="SparkleWorks Cleaning Services" width="300" height="80" class="h-16 sm:h-[4.25rem] w-auto max-w-[min(100%,300px)] sm:max-w-[340px] object-contain object-left brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"/>
 </a>
 <p class="max-w-sm mb-6 leading-relaxed">SparkleWorks brings a higher standard of clean to Chicago—warm, reliable service with eco-conscious products and a team that respects your home.</p>
 <p class="text-sm font-semibold text-white mb-2">Contact for quote</p>
@@ -376,13 +376,13 @@ Commercial cleaning for Chicago offices &amp; small businesses — <span class="
 <div>
 <h5 class="text-white font-bold mb-6">Services</h5>
 <ul class="space-y-4 text-sm">
-<li><a class="hover:text-primary transition-colors" href="residential.html">Residential</a></li>
-<li><a class="hover:text-primary transition-colors" href="move-in-out.html">Move In / Out</a></li>
-<li><a class="hover:text-primary transition-colors" href="str-airbnb.html">STR / Airbnb</a></li>
-<li><a class="hover:text-primary transition-colors" href="deep-clean.html">Deep Clean</a></li>
-<li><a class="hover:text-primary transition-colors" href="recurring.html">Recurring</a></li>
-<li><a class="hover:text-primary transition-colors" href="post-construction.html">Post-Construction</a></li>
-<li><a class="hover:text-primary transition-colors" href="commercial.html">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="services/residential.html">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="services/move-in-out.html">Move In / Out</a></li>
+<li><a class="hover:text-primary transition-colors" href="services/str-airbnb.html">STR / Airbnb</a></li>
+<li><a class="hover:text-primary transition-colors" href="services/deep-clean.html">Deep Clean</a></li>
+<li><a class="hover:text-primary transition-colors" href="services/recurring.html">Recurring</a></li>
+<li><a class="hover:text-primary transition-colors" href="services/post-construction.html">Post-Construction</a></li>
+<li><a class="hover:text-primary transition-colors" href="services/commercial.html">Commercial</a></li>
 </ul>
 </div>
 <div>
