@@ -1,0 +1,5 @@
+# SparkleWorks — allow indexing. Replace Sitemap URL host with your production domain when you connect a custom domain.
+User-agent: *
+Allow: /
+
+Sitemap: https://sparkle-works-git-main-skycrestsites-projects.vercel.app/sitemap.xml
