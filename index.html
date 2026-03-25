@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SparkleWorks Cleaning Services | Chicago Residential &amp; Commercial Cleaning</title>
+<meta name="description" content="SparkleWorks Cleaning Services — A Higher Standard of Clean. Licensed, insured, Chicago-based home and office cleaning. Eco-conscious, recurring plans, and same trusted team."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#0ea5e9",
+        accent: "#10b981",
+        "background-light": "#f4f9fb",
+        "background-dark": "#0f172a",
+      },
+      fontFamily: { display: ["Inter", "sans-serif"] },
+      borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+    },
+  },
+}
+</script>
+<style>
+body { font-family: 'Inter', sans-serif; }
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+html { scroll-behavior: smooth; }
+#mobile-menu.transitioning { transition: opacity 0.2s ease; }
+@media (max-width: 768px) {
+  a, button { -webkit-tap-highlight-color: rgba(14, 165, 233, 0.2); }
+}
+.dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; }
+.mobile-services-open .mobile-chevron { transform: rotate(180deg); }
+.text-gradient-brand {
+  background: linear-gradient(90deg, #0ea5e9 0%, #06b6d4 40%, #22c55e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<a href="index.html" class="flex items-center gap-3 scroll-top">
+<img src="assets/sparkleworks-logo.png" alt="SparkleWorks Cleaning Services" class="h-11 sm:h-12 w-auto object-contain object-left"/>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<div class="dropdown relative">
+<button type="button" class="text-sm font-semibold hover:text-primary transition-colors flex items-center gap-1">
+Services <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+</button>
+<div class="dropdown-menu absolute top-full left-0 pt-2 py-2 w-56 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-slate-200 dark:border-slate-700 opacity-0 invisible transition-all duration-200 z-50 max-h-[70vh] overflow-y-auto">
+<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary rounded-t-lg" href="residential.html">Residential</a>
+<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="move-in-out.html">Move In / Move Out</a>
+<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="str-airbnb.html">STR / Airbnb</a>
+<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="deep-clean.html">Deep Clean</a>
+<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="recurring.html">Recurring</a>
+<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary" href="post-construction.html">Post-Construction</a>
+<a class="block px-4 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-primary rounded-b-lg border-t border-slate-100 dark:border-slate-700" href="commercial.html">Commercial</a>
+</div>
+</div>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#reviews">Reviews</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#contact">Contact</a>
+<a class="bg-gradient-to-r from-primary to-accent text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:opacity-95 transition-all shadow-lg shadow-primary/20" href="tel:+17735550198">Get a Quote</a>
+</nav>
+<button type="button" class="md:hidden p-3 -mr-2 min-w-[44px] min-h-[44px] rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" id="menu-toggle" aria-label="Toggle menu">
+<span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
+</button>
+</div>
+</div>
+</header>
+<div id="mobile-menu" class="fixed inset-0 z-40 md:hidden hidden">
+<div class="fixed inset-0 bg-black/50 backdrop-blur-sm" id="menu-backdrop" aria-hidden="true"></div>
+<nav class="fixed top-0 right-0 w-full max-w-[min(20rem,85vw)] h-full bg-white dark:bg-slate-900 shadow-2xl flex flex-col pt-24 px-6 overflow-y-auto">
+<button type="button" class="absolute top-6 right-6 p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" id="menu-close" aria-label="Close menu">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+<div class="mb-2">
+<button type="button" class="py-4 text-base font-semibold border-b border-slate-200 dark:border-slate-700 w-full text-left flex items-center justify-between mobile-services-toggle">
+Services <svg class="w-5 h-5 flex-shrink-0 transition-transform mobile-chevron" fill="currentColor" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+</button>
+<div id="mobile-services" class="hidden pl-4 pb-2 border-b border-slate-200 dark:border-slate-700">
+<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="residential.html">Residential</a>
+<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="move-in-out.html">Move In / Move Out</a>
+<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="str-airbnb.html">STR / Airbnb</a>
+<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="deep-clean.html">Deep Clean</a>
+<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="recurring.html">Recurring</a>
+<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="post-construction.html">Post-Construction</a>
+<a class="block py-3 text-slate-600 dark:text-slate-400 hover:text-primary nav-link" href="commercial.html">Commercial</a>
+</div>
+</div>
+<a class="py-4 text-base font-semibold border-b border-slate-200 dark:border-slate-700 hover:text-primary transition-colors nav-link" href="#about">About</a>
+<a class="py-4 text-base font-semibold border-b border-slate-200 dark:border-slate-700 hover:text-primary transition-colors nav-link" href="#reviews">Reviews</a>
+<a class="py-4 text-base font-semibold border-b border-slate-200 dark:border-slate-700 hover:text-primary transition-colors nav-link" href="#contact">Contact</a>
+<a class="mt-4 bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-lg text-base font-bold text-center hover:opacity-95 transition-all nav-link" href="tel:+17735550198">Call for a Quote</a>
+</nav>
+</div>
+
+<section class="relative py-12 lg:py-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-8">
+<div class="space-y-4">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-wider uppercase">
+<span class="material-symbols-outlined text-sm">verified</span> Chicago · Residential focus
+</span>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.15] tracking-tight">
+<span class="text-gradient-brand">A Higher Standard of Clean</span>
+</h1>
+<p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
+SparkleWorks brings friendly, dependable service to Chicago homes and workplaces—reliable scheduling, eco-conscious products, and the same trained professionals who learn your space and preferences.
+</p>
+</div>
+<div class="flex flex-wrap gap-3">
+<a class="inline-flex items-center gap-2 bg-slate-200/80 dark:bg-slate-700/80 text-slate-800 dark:text-slate-100 px-4 py-2 rounded-full text-sm font-semibold" href="#trust">
+<span class="material-symbols-outlined text-accent text-lg">shield_with_heart</span> Licensed &amp; insured
+</a>
+<a class="inline-flex items-center gap-2 bg-slate-200/80 dark:bg-slate-700/80 text-slate-800 dark:text-slate-100 px-4 py-2 rounded-full text-sm font-semibold" href="#trust">
+<span class="material-symbols-outlined text-primary text-lg">star</span> 5-star rated
+</a>
+<a class="inline-flex items-center gap-2 bg-slate-200/80 dark:bg-slate-700/80 text-slate-800 dark:text-slate-100 px-4 py-2 rounded-full text-sm font-semibold" href="#trust">
+<span class="material-symbols-outlined text-accent text-lg">location_home</span> Locally owned
+</a>
+<a class="inline-flex items-center gap-2 bg-slate-200/80 dark:bg-slate-700/80 text-slate-800 dark:text-slate-100 px-4 py-2 rounded-full text-sm font-semibold" href="#trust">
+<span class="material-symbols-outlined text-primary text-lg">badge</span> Background checked
+</a>
+</div>
+<div class="flex flex-wrap gap-4">
+<a class="bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-xl text-lg font-bold hover:opacity-95 transition-all shadow-xl shadow-primary/25 flex items-center gap-2" href="tel:+17735550198">
+Call for a free quote <span class="material-symbols-outlined">call</span>
+</a>
+<a class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all" href="#services">
+Our services
+</a>
+</div>
+<div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-800/80 p-5 max-w-md">
+<p class="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-1">Contact for quote</p>
+<a href="tel:+17735550198" class="text-2xl font-black text-primary hover:text-accent transition-colors">(773) 555-0198</a>
+<p class="text-sm text-slate-500 mt-2">We’ll walk through your home or rental, answer questions, and tailor a plan—no hassle.</p>
+</div>
+</div>
+<div class="relative">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/25 to-accent/20 blur-3xl rounded-full scale-110"></div>
+<img alt="Bright, clean Chicago living space" class="relative rounded-3xl shadow-2xl object-cover aspect-[4/5] w-full" src="https://images.unsplash.com/photo-1563453392212-326f5e854473?w=800&q=80"/>
+<div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-700">
+<div class="flex items-center gap-3">
+<div class="h-12 w-12 bg-accent/15 text-accent rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined font-bold">eco</span>
+</div>
+<div>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Eco-conscious</p>
+<p class="text-lg font-bold text-slate-900 dark:text-white">Products you can feel good about</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="trust" class="py-12 border-y border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark/50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<p class="text-center text-sm font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-8">Why Chicago homeowners trust SparkleWorks</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-primary">verified_user</span>
+<span class="font-bold text-slate-800 dark:text-slate-100">Licensed &amp; insured</span>
+<span class="text-sm text-slate-500">Full protection for your peace of mind</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-accent">star</span>
+<span class="font-bold text-slate-800 dark:text-slate-100">5-star rated</span>
+<span class="text-sm text-slate-500">Consistent results you notice right away</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-primary">home_pin</span>
+<span class="font-bold text-slate-800 dark:text-slate-100">Locally owned</span>
+<span class="text-sm text-slate-500">Proud to serve Chicago neighborhoods</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-accent">policy</span>
+<span class="font-bold text-slate-800 dark:text-slate-100">Background checked</span>
+<span class="text-sm text-slate-500">Vetted team members in your space</span>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 bg-white dark:bg-background-dark/30">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Professional home cleaning" class="rounded-2xl object-cover w-full aspect-[4/3] shadow-lg"/>
+<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Clean, welcoming interior" class="rounded-2xl object-cover w-full aspect-[4/3] shadow-lg"/>
+<img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&q=80" alt="Sparkling kitchen details" class="rounded-2xl object-cover w-full aspect-[4/3] shadow-lg"/>
+</div>
+</div>
+</section>
+
+<section id="services" class="py-24 scroll-mt-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-4xl font-extrabold text-slate-900 dark:text-white">Cleaning services in Chicago</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">Residential is our specialty—we also support local offices and workspaces. Explore a service to see how we can help.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+<a href="residential.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
+<div class="h-16 w-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">home</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Residential</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">Routine and detail-focused home care—living spaces that feel calm, fresh, and guest-ready.</p>
+<span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</a>
+<a href="move-in-out.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
+<div class="h-16 w-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">moving</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Move In / Move Out</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">Start fresh or leave your place spotless for the next resident—ideal for leases and closings.</p>
+<span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</a>
+<a href="str-airbnb.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
+<div class="h-16 w-16 bg-accent/10 text-accent rounded-2xl flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">holiday_village</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">STR / Airbnb</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">Turnover cleans that protect your reviews—fast, thorough, and ready for the next guest.</p>
+<span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</a>
+<a href="deep-clean.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
+<div class="h-16 w-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">cleaning_services</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Deep Clean</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">Top-to-bottom attention for kitchens, baths, and overlooked areas—beyond everyday upkeep.</p>
+<span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</a>
+<a href="recurring.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
+<div class="h-16 w-16 bg-accent/10 text-accent rounded-2xl flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">event_repeat</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Recurring</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">Weekly, bi-weekly, or monthly plans—predictable scheduling with the same familiar faces.</p>
+<span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</a>
+<a href="post-construction.html" class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-2xl hover:shadow-primary/5 block">
+<div class="h-16 w-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">construction</span>
+</div>
+<h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Post-Construction</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">Dust, debris, and residue cleared so you can enjoy your finished project safely.</p>
+<span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</a>
+</div>
+<div class="mt-10 text-center">
+<a href="commercial.html" class="inline-flex items-center gap-2 text-slate-600 dark:text-slate-400 hover:text-primary font-semibold text-sm">
+<span class="material-symbols-outlined text-lg">corporate_fare</span>
+Commercial cleaning for Chicago offices &amp; small businesses — <span class="text-primary underline-offset-2 hover:underline">Learn more</span>
+</a>
+</div>
+</div>
+</section>
+
+<section id="about" class="py-24 bg-slate-900 text-white overflow-hidden scroll-mt-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-16 items-start">
+<div class="space-y-10">
+<div class="space-y-4">
+<h2 class="text-4xl font-extrabold tracking-tight">What sets us apart</h2>
+<p class="text-slate-300 text-lg leading-relaxed">We’re not just another cleaning company—we’re your dependable partner in keeping Chicago homes and workplaces spotless, healthy, and stress-free. Built for the pace of city life, our cleaning services are designed around reliability, precision, and respect for your space.</p>
+<p class="text-slate-300 text-lg leading-relaxed">What sets us apart is simple: we clean with intention. Every visit follows a detailed, customized checklist tailored to your needs—no rushed jobs, no missed corners, no rotating crews. You’ll see the same trained professionals who know your space, your preferences, and your standards.</p>
+<p class="text-slate-300 text-lg leading-relaxed">As a Chicago-based business, we take pride in serving our neighborhoods with eco-conscious products, transparent pricing, and punctual service that fits your schedule. From downtown condos to family homes and busy offices, we deliver consistent results you can feel the moment you walk in. Cleaning shouldn’t be a gamble or a hassle. With SparkleWorks, it’s a guarantee.</p>
+</div>
+<div class="rounded-2xl bg-slate-800/80 border border-slate-700 p-8 space-y-4">
+<h3 class="text-xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-accent">event_repeat</span> Recurring plans
+</h3>
+<p class="text-slate-400 leading-relaxed">Simplify life with a recurring schedule that matches your rhythm. We’ll recommend weekly, bi-weekly, or monthly service based on your home, pets, and traffic—and adjust as your needs change.</p>
+<a href="tel:+17735550198" class="inline-flex items-center gap-2 font-bold text-primary hover:text-sky-300 transition-colors">Call <span class="text-white">(773) 555-0198</span> to plan your visits</a>
+</div>
+</div>
+<div class="relative lg:sticky lg:top-28">
+<div class="aspect-[4/5] bg-primary/20 absolute -top-10 -right-10 rounded-full blur-3xl"></div>
+<div class="relative rounded-3xl overflow-hidden border-8 border-slate-800 shadow-2xl">
+<img alt="Professional cleaner caring for a Chicago home" class="w-full h-full object-cover min-h-[320px]" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+<div class="absolute bottom-10 left-10 right-10">
+<p class="text-3xl font-black text-white">SparkleWorks</p>
+<p class="text-slate-300 font-bold tracking-widest uppercase text-sm">Chicago · Residential &amp; commercial</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="reviews" class="py-24 bg-background-light dark:bg-background-dark/30 scroll-mt-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-4xl font-extrabold text-slate-900 dark:text-white">What our clients say</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">Kind words from neighbors who wanted a higher standard—and got it.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+<div class="flex text-primary mb-6 gap-0.5" aria-hidden="true">
+<span class="material-symbols-outlined text-[22px]">star</span><span class="material-symbols-outlined text-[22px]">star</span><span class="material-symbols-outlined text-[22px]">star</span><span class="material-symbols-outlined text-[22px]">star</span><span class="material-symbols-outlined text-[22px]">star</span>
+</div>
+<p class="text-slate-600 dark:text-slate-300 italic mb-8">“Our Lincoln Park condo has never felt this consistently fresh. Same team, great communication, and they actually follow the checklist we agreed on.”</p>
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-gradient-to-br from-primary/30 to-accent/30 flex items-center justify-center text-slate-700 dark:text-slate-200 font-bold">A</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">Alex R.</p>
+<p class="text-xs text-slate-500 uppercase font-bold">Homeowner</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+<div class="flex text-accent mb-6 gap-0.5" aria-hidden="true">
+<span class="material-symbols-outlined text-[22px]">star</span><span class="material-symbols-outlined text-[22px]">star</span><span class="material-symbols-outlined text-[22px]">star</span><span class="material-symbols-outlined text-[22px]">star</span><span class="material-symbols-outlined text-[22px]">star</span>
+</div>
+<p class="text-slate-600 dark:text-slate-300 italic mb-8">“We use them between Airbnb guests. Turnovers are on time and the reviews mention how clean the place feels—that’s worth everything.”</p>
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-gradient-to-br from-primary/30 to-accent/30 flex items-center justify-center text-slate-700 dark:text-slate-200 font-bold">J</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">Jordan M.</p>
+<p class="text-xs text-slate-500 uppercase font-bold">STR host</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+<div class="flex text-primary mb-6 gap-0.5" aria-hidden="true">
+<span class="material-symbols-outlined text-[22px]">star</span><span class="material-symbols-outlined text-[22px]">star</span><span class="material-symbols-outlined text-[22px]">star</span><span class="material-symbols-outlined text-[22px]">star</span><span class="material-symbols-outlined text-[22px]">star</span>
+</div>
+<p class="text-slate-600 dark:text-slate-300 italic mb-8">“Deep clean before we moved in made the new place feel like ours immediately. Professional, friendly, and careful with our floors and finishes.”</p>
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-gradient-to-br from-primary/30 to-accent/30 flex items-center justify-center text-slate-700 dark:text-slate-200 font-bold">T</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">Taylor &amp; Sam</p>
+<p class="text-xs text-slate-500 uppercase font-bold">New residents</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer id="contact" class="bg-slate-950 text-slate-400 pt-24 pb-12 scroll-mt-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
+<div class="col-span-2">
+<a href="index.html" class="inline-block mb-6">
+<img src="assets/sparkleworks-logo.png" alt="SparkleWorks Cleaning Services" class="h-14 w-auto object-contain object-left brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"/>
+</a>
+<p class="max-w-sm mb-6 leading-relaxed">SparkleWorks brings a higher standard of clean to Chicago—warm, reliable service with eco-conscious products and a team that respects your home.</p>
+<p class="text-sm font-semibold text-white mb-2">Contact for quote</p>
+<a href="tel:+17735550198" class="text-xl font-bold text-primary hover:text-sky-300 transition-colors block mb-4">(773) 555-0198</a>
+<a href="mailto:Garrett_taliaferro@yahoo.com" class="text-accent hover:text-emerald-300 transition-colors text-sm font-medium break-all">Garrett_taliaferro@yahoo.com</a>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Quick links</h5>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="#services">Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="#about">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="#reviews">Reviews</a></li>
+<li><a class="hover:text-primary transition-colors" href="#contact">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Services</h5>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="residential.html">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="move-in-out.html">Move In / Out</a></li>
+<li><a class="hover:text-primary transition-colors" href="str-airbnb.html">STR / Airbnb</a></li>
+<li><a class="hover:text-primary transition-colors" href="deep-clean.html">Deep Clean</a></li>
+<li><a class="hover:text-primary transition-colors" href="recurring.html">Recurring</a></li>
+<li><a class="hover:text-primary transition-colors" href="post-construction.html">Post-Construction</a></li>
+<li><a class="hover:text-primary transition-colors" href="commercial.html">Commercial</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Service area</h5>
+<ul class="space-y-4 text-sm">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm shrink-0">location_on</span>
+<span>Chicago, IL and surrounding neighborhoods</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm shrink-0">call</span>
+<a class="hover:text-white transition-colors" href="tel:+17735550198">(773) 555-0198</a>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm shrink-0">mail</span>
+<a class="hover:text-white transition-colors break-all" href="mailto:Garrett_taliaferro@yahoo.com">Garrett_taliaferro@yahoo.com</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium">
+<p>© 2026 SparkleWorks Cleaning Services. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-white transition-colors" href="privacy-policy.html">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="terms-of-service.html">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+(function() {
+  var menu = document.getElementById('mobile-menu');
+  var toggle = document.getElementById('menu-toggle');
+  var closeBtn = document.getElementById('menu-close');
+  var backdrop = document.getElementById('menu-backdrop');
+  var navLinks = document.querySelectorAll('.nav-link');
+  var svcBtn = document.querySelector('.mobile-services-toggle');
+  var svcPanel = document.getElementById('mobile-services');
+
+  function openMenu() {
+    menu.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    menu.classList.add('hidden');
+    document.body.style.overflow = '';
+    if (svcPanel) svcPanel.classList.add('hidden');
+    if (svcBtn) svcBtn.classList.remove('mobile-services-open');
+  }
+  function toggleMenu() {
+    if (menu.classList.contains('hidden')) openMenu();
+    else closeMenu();
+  }
+  function toggleServices() {
+    if (svcPanel) {
+      svcPanel.classList.toggle('hidden');
+      if (svcBtn) svcBtn.classList.toggle('mobile-services-open', !svcPanel.classList.contains('hidden'));
+    }
+  }
+
+  if (toggle) toggle.addEventListener('click', toggleMenu);
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if (backdrop) backdrop.addEventListener('click', closeMenu);
+  if (svcBtn) svcBtn.addEventListener('click', toggleServices);
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    var href = a.getAttribute('href');
+    if (href === '#') return;
+    a.addEventListener('click', function(e) {
+      var target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
