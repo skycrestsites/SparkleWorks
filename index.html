@@ -37,9 +37,14 @@ html { scroll-behavior: smooth; }
 .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; }
 .mobile-services-open .mobile-chevron { transform: rotate(180deg); }
 .text-gradient-brand {
+  display: inline-block;
+  max-width: 100%;
+  padding: 0 0.08em 0.06em 0;
+  line-height: 1.18;
   background: linear-gradient(90deg, #0ea5e9 0%, #06b6d4 40%, #22c55e 100%);
   -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
 }
 </style>
@@ -107,12 +112,12 @@ Services <svg class="w-5 h-5 flex-shrink-0 transition-transform mobile-chevron" 
 <section class="relative py-12 lg:py-24 overflow-hidden">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
-<div class="flex flex-col gap-8">
+<div class="flex flex-col gap-8 min-w-0 lg:pr-4 xl:pr-6">
 <div class="space-y-4">
 <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-wider uppercase">
 <span class="material-symbols-outlined text-sm">verified</span> Chicago · Residential focus
 </span>
-<h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.15] tracking-tight">
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.2] tracking-normal">
 <span class="text-gradient-brand">A Higher Standard of Clean</span>
 </h1>
 <p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
